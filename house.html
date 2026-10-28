@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahria College - House System & Clubs</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="house.css">
+    <script src="house (1).js"></script>
+</head>
+<body class="light-theme">
+
+    <!-- Top Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand">
+                <div class="logo-wrapper">
+                    <!-- Official Bahria College Crest SVG Logo -->
+                    <svg viewBox="0 0 300 300" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="150" cy="150" r="140" fill="none" stroke="#002147" stroke-width="4"/>
+                        <circle cx="150" cy="150" r="132" fill="none" stroke="#002147" stroke-width="2" stroke-dasharray="6,4"/>
+                        <circle cx="150" cy="125" r="95" fill="none" stroke="#002147" stroke-width="3"/>
+                        <path d="M 75 140 C 70 90, 100 65, 115 85 C 100 100, 90 120, 85 145 Z" fill="#002147"/>
+                        <path d="M 65 130 C 60 95, 85 75, 100 90 C 88 105, 80 120, 75 135 Z" fill="#002147"/>
+                        <path d="M 225 140 C 230 90, 200 65, 185 85 C 200 100, 210 120, 215 145 Z" fill="#002147"/>
+                        <path d="M 235 130 C 240 95, 215 75, 200 90 C 212 105, 220 120, 225 135 Z" fill="#002147"/>
+                        <g transform="translate(150, 80)">
+                            <line x1="0" y1="-15" x2="0" y2="-25" stroke="#002147" stroke-width="2"/>
+                            <line x1="-10" y1="-10" x2="-18" y2="-18" stroke="#002147" stroke-width="2"/>
+                            <line x1="10" y1="-10" x2="18" y2="-18" stroke="#002147" stroke-width="2"/>
+                            <path d="M -8 5 C -12 -10, 0 -20, 0 -20 C 0 -20, 12 -10, 8 5 Z" fill="#002147"/>
+                            <path d="M -25 30 Q 0 15 25 30 L 22 5" fill="none" stroke="#002147" stroke-width="2"/>
+                            <path d="M -25 30 Q 0 45 25 30 L 25 5 Q 0 20 -25 5 Z" fill="#ffffff" stroke="#002147" stroke-width="2"/>
+                            <line x1="0" y1="20" x2="0" y2="38" stroke="#002147" stroke-width="2"/>
+                            <text x="-12" y="22" font-size="9" font-family="serif" fill="#002147" font-weight="bold">اقرأ</text>
+                            <text x="3" y="22" font-size="9" font-family="serif" fill="#002147" font-weight="bold">وارتق</text>
+                        </g>
+                        <g transform="translate(150, 160) scale(0.65)">
+                            <path d="M -15 20 C -25 0, -15 -20, 0 -20 C 15 -20, 25 0, 15 20 Z" fill="none" stroke="#002147" stroke-width="2"/>
+                            <path d="M -20 -10 C -10 -25, 10 -25, 20 -10 C 22 5, 0 25, 0 25 C 0 25, -22 5, -20 -10 Z" fill="none" stroke="#002147" stroke-width="2"/>
+                            <line x1="0" y1="-12" x2="0" y2="15" stroke="#002147" stroke-width="3"/>
+                            <line x1="-10" y1="-4" x2="10" y2="-4" stroke="#002147" stroke-width="3"/>
+                            <circle cx="0" cy="-12" r="2" fill="#002147"/>
+                            <path d="M -12 10 Q 0 18 12 10" fill="none" stroke="#002147" stroke-width="2.5"/>
+                            <path d="M 0 -22 L 0 -26 M -3 -24 L 3 -24" stroke="#002147" stroke-width="1.5"/>
+                            <path d="M 2 -27 A 3 3 0 1 0 5 -23 A 2 2 0 1 1 2 -27" fill="#002147"/>
+                        </g>
+                        <path d="M 30 220 Q 150 280 270 220 L 260 250 Q 150 305 40 250 Z" fill="#ffffff" stroke="#002147" stroke-width="3"/>
+                        <path d="M 25 210 L 40 250 L 50 230 Z" fill="#002147"/>
+                        <path d="M 275 210 L 260 250 L 250 230 Z" fill="#002147"/>
+                        <text x="150" y="252" font-size="19" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" fill="#002147" text-anchor="middle" letter-spacing="2">BAHRIA COLLEGE</text>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <span class="title">BAHRIA COLLEGE</span>
+                    <span class="subtitle">NORE-I, KARACHI</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">About <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">History & Vision</a>
+                        <a href="#">Principal's Message</a>
+                        <a href="#">Administration</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Wings <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Girls Wing</a>
+                        <a href="#">Boys Wing</a>
+                        <a href="#">Primary Wing</a>
+                    </div>
+                </div>
+                <a href="#" class="active">Activities</a>
+                <a href="#">Our Team</a>
+                <a href="#">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggleBtn" title="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-badge">
+                <i class="fa-solid fa-graduation-cap"></i> BAHRIA COLLEGE • KARACHI
+            </div>
+            <h1>Bahria College House System</h1>
+            <p>Building teamwork, leadership, responsibility, and school spirit through friendly competition and shared achievements.</p>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="main-container">
+        
+        <!-- Quote Card -->
+        <div class="quote-card">
+            <div class="quote-bar"></div>
+            <p>"We're using the House System to encourage pupils to invest in the life of the school — rather than treating the school as an enemy."</p>
+            <span class="quote-author">— Anonymous</span>
+        </div>
+
+        <!-- Section: About the House System -->
+        <section class="content-section">
+            <h2 class="section-title">About the House System</h2>
+            <div class="text-content">
+                <p>Since its introduction, the House System has helped schools promote personal responsibility and a sense of belonging among pupils. These smaller school communities encourage healthy rivalry through friendly games and extracurricular activities.</p>
+                <p>The system develops teamwork, leadership, cooperation, and individual strengths while building friendships among pupils of different age groups. Students join a House when they enter the school and remain members until they leave.</p>
+                <p>As students progress into senior classes, they take greater responsibility for managing their Houses and coordinating activities, helping them develop confidence, initiative, and organizational skills.</p>
+            </div>
+        </section>
+
+        <!-- Section: Purpose & Objectives -->
+        <section class="content-section">
+            <h2 class="section-title">Purpose & Objectives</h2>
+            <p class="section-intro">At Bahria College, the House System is designed to encourage participation, healthy competition, and a strong school community. The traditional school sports day is organized as an inter-house competition.</p>
+            
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <div class="obj-icon"><i class="fa-solid fa-people-group"></i></div>
+                    <h3>Teamwork</h3>
+                    <p>Working together, supporting peers, and achieving common goals.</p>
+                </div>
+                <div class="objective-card">
+                    <div class="obj-icon"><i class="fa-solid fa-award"></i></div>
+                    <h3>Leadership</h3>
+                    <p>Developing confidence, responsibility, and decision-making skills.</p>
+                </div>
+                <div class="objective-card">
+                    <div class="obj-icon"><i class="fa-solid fa-trophy"></i></div>
+                    <h3>Healthy Competition</h3>
+                    <p>Encouraging fair play, participation, and continuous improvement.</p>
+                </div>
+                <div class="objective-card">
+                    <div class="obj-icon"><i class="fa-solid fa-fire"></i></div>
+                    <h3>School Spirit</h3>
+                    <p>Building a strong sense of community and school pride.</p>
+                </div>
+                <div class="objective-card">
+                    <div class="obj-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                    <h3>Community Service</h3>
+                    <p>Promoting service to others and a sense of social responsibility.</p>
+                </div>
+                <div class="objective-card">
+                    <div class="obj-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Personal Growth</h3>
+                    <p>Recognizing individual skills and learning to handle success and failure.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: House Structure -->
+        <section class="content-section">
+            <h2 class="section-title">House Structure</h2>
+            <p class="section-intro">Students are assigned to Houses according to their performance, ability, and talents, with the aim of maintaining a reasonable balance between Houses and encouraging fair competition.</p>
+
+            <!-- 4 Houses Cards -->
+            <div class="houses-grid">
+                
+                <!-- Zafar House (Yellow) -->
+                <div class="house
+                // Houses ka Data Object
+const housesData = {
+    zafar: {
+        title: "Zafar House",
+        color: "Yellow",
+        badgeClass: "badge-yellow",
+        motto: '"Excellence & Valor"',
+        image: "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=600&q=80",
+        desc: "Zafar House represents bright intellect, enthusiasm, and teamwork. Named after the historic courage, students of Zafar House excel in academics, sports, and cultural events.",
+        master: "Prof. Ahmed Raza",
+        captain: "Ali Zafar"
+    },
+    jinnah: {
+        title: "Jinnah House",
+        color: "Green",
+        badgeClass: "badge-green",
+        motto: '"Unity, Faith & Discipline"',
+        image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=600&q=80",
+        desc: "Jinnah House stands for leadership, unity, and discipline, inspired by the Father of the Nation, Quaid-e-Azam Muhammad Ali Jinnah. Members strive for integrity and leadership.",
+        master: "Mr. Muhammad Usman",
+        captain: "Hamza Jinnah"
+    },
+    iqbal: {
+        title: "Iqbal House",
+        color: "Red",
+        badgeClass: "badge-red",
+        motto: '"Vision & Leadership"',
+        image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80",
+        desc: "Named after Allama Muhammad Iqbal, this house embodies high thinking, creative expression, and intellectual pursuit. Iqbal House members lead in debates and literature.",
+        master: "Dr. Tariq Mahmood",
+        captain: "Bilal Iqbal"
+    },
+    tipu: {
+        title: "Tipu House",
+        color: "Brown",
+        badgeClass: "badge-brown",
+        motto: '"Courage & Honor"',
+        image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80",
+        desc: "Inspired by Tipu Sultan, the Tiger of Mysore, Tipu House symbolizes bravery, determination, and resilience. Members are known for their performance in sports.",
+        master: "Mr. Shahbaz Khan",
+        captain: "Usman Tipu"
+    }
+};
+
+// Modal Elements
+const modal = document.getElementById('houseModal');
+const modalImg = document.getElementById('modalImg');
+const modalBadge = document.getElementById('modalBadge');
+const modalTitle = document.getElementById('modalTitle');
+const modalMotto = document.getElementById('modalMotto');
+const modalDesc = document.getElementById('modalDesc');
+const modalMaster = document.getElementById('modalMaster');
+const modalCaptain = document.getElementById('modalCaptain');
+
+// Open Modal Function
+function openModal(houseKey) {
+    const data = housesData[houseKey];
+    if (!data) return;
+
+    modalImg.src = data.image;
+    modalTitle.textContent = data.title;
+    modalMotto.textContent = data.motto;
+    modalDesc.textContent = data.desc;
+    modalMaster.textContent = data.master;
+    modalCaptain.textContent = data.captain;
+
+    modalBadge.textContent = data.color;
+    modalBadge.className = `modal-badge ${data.badgeClass}`;
+
+    modal.classList.add('active');
+}
+
+// Close Modal Function
+function closeModal() {
+    modal.classList.remove('active');
+}
+
+// Close Modal on Outside Click
+modal.addEventListener('click', (e) =>
